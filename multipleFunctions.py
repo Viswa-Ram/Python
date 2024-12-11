@@ -27,3 +27,21 @@ class multipleFunctions():
             print('Eligible')
         else:
             print('Not Eligible')
+
+    def markPercentage():
+        markList = []
+        for i in range(5):
+            mark = int(input(f"Enter the mark of subject {i + 1}: "))
+            markList.append(mark)
+            
+        for mr in markList:
+            numberSum = sum(markList)
+            avg = numberSum/len(markList)
+        print("Total:", numberSum)
+        print("Percentage:", avg)
+
+    def aiSubList():
+        aiSubList = ["Machine Learning", "Neural Networks", "Vision", "Robotics", "Speech Processing", "Natural Language Processing"]
+        print("Sub-fields in AI are:")
+        for sub in aiSubList:
+            print(sub)
